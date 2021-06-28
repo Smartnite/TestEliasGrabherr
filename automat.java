@@ -13,7 +13,7 @@ public class automat{
         Random random = new Random();
         Ticket ticket = new Ticket(random.nextInt(100));
         ticks.add(ticket);
-        System.out.println("Ticket erstellt");
+        System.out.println("Ticket erfolgreich erstellt");
     }
     public void showTicks(){
         for(int i = 0; i < ticks.size(); i++){
@@ -24,7 +24,7 @@ public class automat{
         for(int i = 0; i < ticks.size(); i++){
             if(ticks.get(i).getId() == id){
                 ticket = ticks.get(i);
-                System.out.println("Ticket eingelesen");
+                System.out.println("Ticket erfolgreichh eingelesen");
             }
         }
     }
