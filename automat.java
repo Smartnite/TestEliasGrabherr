@@ -29,7 +29,14 @@ public class automat{
         }
     }
     public float getPrice(){
-
+        if(ticket != null){
+            long jetzt = new Date().getTime();
+            return (jetzt - ticket.getEingeloest().getTime()) / 1000;
+        }
+        else{
+            System.out.println("Kein Ticket eingelesen...");
+        }
+        return 0;
     }
     public float pay(float amount) {
 
